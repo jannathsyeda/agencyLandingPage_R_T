@@ -1,8 +1,11 @@
 import CompaniesLogo from "./CompaniesLogo";
 import Header from "./Header";
 import Hero from "./Hero";
-import ServiceOne from "./ServiceOne";
+import Pricing from "./Pricing";
+import ServiceMain from "./ServiceOne/ServiceMain";
 import ServiceTwo from "./ServiceTwo";
+import Testimonial from "./Testimonial";
+
 
 
 function App() {
@@ -11,8 +14,11 @@ function App() {
       <Header />
       <Hero />
       <CompaniesLogo/>
-      <ServiceOne/>
+      <ServiceMain/>
+
       <ServiceTwo/>
+      <Testimonial/>
+      <Pricing/>
     </>
   );
 }
