@@ -1,5 +1,6 @@
 import CompaniesLogo from "./CompaniesLogo";
 import FaqAccordion from "./FAQ/FaqAccordion";
+import FooterMain from "./Footer/FooterMain";
 import Header from "./Header";
 import Hero from "./Hero";
 import Pricing from "./Pricing";
@@ -23,6 +24,7 @@ function App() {
       <Pricing/>
       <FaqAccordion/>
       <Trial/>
+      <FooterMain/>
     </>
   );
 }
