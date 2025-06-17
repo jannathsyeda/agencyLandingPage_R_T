@@ -6,7 +6,8 @@ import Instagram from "../Svg/Instagram";
 import Github from "../Svg/Github";
 import Dribbble from "../Svg/Dribbble";
 import Twitter from "../Svg/Twitter";
-
+import FooterBrand from "./FooterBrand";
+import logo from '../assets/logo.svg'
 export default function FooterMain() {
 
   const footerSections = [
@@ -83,8 +84,13 @@ export default function FooterMain() {
             icon: Dribbble
           }
         ];
-  
-
+     const    builtWithLinks = [
+          { name: "Flowbite", url: "#" },
+          { name: "Tailwind CSS", url: "#" }
+        ]
+const title="Learn with Sumit"
+const imghrf="#"
+const description="© 2024-2025 Learn with Sumit. All Rights Reserved. Built with"
   // const footerLinks = [
   //   { text: 'Flowbite', href: '#' },
   //   { text: 'Tailwind CSS', href: '#' }
@@ -99,6 +105,8 @@ export default function FooterMain() {
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="text-center">
+
+          <FooterBrand description={description} src={logo} imghrf={imghrf} builtWithLinks={builtWithLinks} title={title}/>
           <SocialLinks icons={socialIcons}/> 
         </div>
       </div>
